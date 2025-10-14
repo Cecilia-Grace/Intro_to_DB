@@ -21,9 +21,9 @@ CREATE TABLE IF NOT EXISTS "Books" (
 DROP TABLE IF EXISTS "Customers";
 CREATE TABLE IF NOT EXISTS "Customers" (
 	"customer_id "	INTEGER,
-	"customer_name"	VARCHAR(215),
+	"customer_name"	VARCHAR(215), 
 	"email"	VARCHAR(215),
-	"address"	TEXT,
+	"address" TEXT,
 	PRIMARY KEY("customer_id ")
 );
 DROP TABLE IF EXISTS "Orders";
