@@ -4,8 +4,8 @@ USE alx_book_store;
 BEGIN TRANSACTION;
 DROP TABLE IF EXISTS "Authors";
 CREATE TABLE IF NOT EXISTS "Authors" (
-	"author_id "	INTEGER,
-	"author_name"	VARCHAR(215),
+	author_id INTEGER,
+	author_name	VARCHAR(215),
 	PRIMARY KEY("author_id ")
 );
 DROP TABLE IF EXISTS "Books";
