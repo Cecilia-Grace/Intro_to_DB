@@ -36,12 +36,12 @@ CREATE TABLE IF NOT EXISTS "Orders" (
 );
 DROP TABLE IF EXISTS "Order_Details";
 CREATE TABLE IF NOT EXISTS "Order_Details" (
-	"orderdetailid "	INTEGER,
-	"order_id "	INTEGER,
-	"book_id "	INTEGER,
-	"quantity "	DOUBLE,
-	FOREIGN KEY("book_id ") REFERENCES "Books"("book_id "),
-	FOREIGN KEY("order_id ") REFERENCES "Orders"("order_id "),
-	PRIMARY KEY("orderdetailid ")
+	orderdetailid INTEGER,
+	order_id INTEGER,
+	book_id INTEGER,
+	quantity DOUBLE,
+	FOREIGN KEY (book_id) REFERENCES Books(book_id),
+	FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+	PRIMARY KEY (orderdetailid)
 );
 COMMIT;
