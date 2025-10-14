@@ -10,17 +10,17 @@ CREATE TABLE IF NOT EXISTS "Authors" (
 );
 DROP TABLE IF EXISTS "Books";
 CREATE TABLE IF NOT EXISTS "Books" (
-	"book_id "	INTEGER,
-	"title"	VARCHAR(130),
-	"author_id "	INTEGER,
-	"price"	DOUBLE,
-	"publication_date"	DATE,
-	FOREIGN KEY("author_id ") REFERENCES "Authors"("author_id "),
+	book_id INTEGER,
+	title VARCHAR(130),
+	author_id INTEGER,
+	price DOUBLE,
+	publication_date DATE,
+	FOREIGN KEY (author_id) REFERENCES Authors(author_id),
 	PRIMARY KEY("book_id ")
 );
 DROP TABLE IF EXISTS "Customers";
 CREATE TABLE IF NOT EXISTS "Customers" (
-	"customer_id "	INTEGER,
+	customer_id INTEGER,
 	customer_name VARCHAR(215), 
 	email VARCHAR(215),
 	address TEXT,
