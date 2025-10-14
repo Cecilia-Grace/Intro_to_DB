@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+USE alx_book_store;
+
 BEGIN TRANSACTION;
 DROP TABLE IF EXISTS "Authors";
 CREATE TABLE IF NOT EXISTS "Authors" (
